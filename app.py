@@ -18,7 +18,6 @@ def main():
 @app.route("/weather/<string:city>")
 def weather(city):
     try:
-        api = "1236e58671e4ceb2270dd39abdbff723"
         source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=1236e58671e4ceb2270dd39abdbff723').read() 
         list_of_data = json.loads(source) 
         return render_template('weather.html', data = list_of_data) 
