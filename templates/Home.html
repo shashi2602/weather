@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block sub_content %}
+<center>
+    <div class="container" style="margin-top: 150px;">
+       
+           <h1 style="font-size: 100px;padding: 20px;font-family:fantasy">Weather</h1>
+           <form method="POST">
+            <input type="text" name="city" placeholder="Enter cityname" style="height: 50px;width: 500px;">
+            <br>
+            <input type="submit" value="Submit" class="btn" style="height: 50px;width: 500px; margin: 5px;color: white; background-color: black; font-size: 20px;font-weight: 900;">
+            <p style="padding: 10px;font-weight: 700;color: black;"><a href="https://openweathermap.org/city" style="color:black">openweathermap.org</a></p>
+        </form>
+    </div>
+    
+</center>
+{% endblock%}
